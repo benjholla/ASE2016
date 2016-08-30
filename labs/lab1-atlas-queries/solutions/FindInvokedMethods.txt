@@ -1,0 +1,9 @@
+Problem Statement: Let methods B and F be sensitive methods.  Return the subset of the sensitive methods that were called.
+
+var B = app.methods("B")
+var F = app.methods("F")
+var sensitive = B.union(F)
+var callEdges = universe.edgesTaggedWithAny(XCSG.Call).retainEdges()
+var sensitiveMethodCallers = callEdges.predecessors(sensitive)
+var calledSensitiveMethods = callEdges.successors(sensitiveMethodCallers).intersection(sensitive)
+show(calledSensitiveMethods)

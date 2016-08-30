@@ -1,0 +1,5 @@
+# XINU Lab
+
+XINU is a small classroom operating system (read backwards it spells unix). XINU is written in C and requires Atlas for C. Import the XINU C project into the Eclipse workspace using `File` &gt; `Import` &gt; `General` &gt; `Existing project into workspace`. The map the XINU project by navigating to `Atlas` &gt; `Manage Project Settings`. Select the XINU project to be mapped and press `OK`. In order to map the C project, you must be able to compile it. On Windows systems this requires a complicated toolchain, so a pre-mapped version of the project is provided for you in this directory. To load the pre-made program graph navigate to `Atlas` &gt; `Load Code Map` and select the `xinu.atlas` file located in this directory.
+
+In this lab you will explore matching memory allocations with memory deallocations.
